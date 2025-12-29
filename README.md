@@ -29,6 +29,5 @@
    
 # Vídeo demonstrativo da Aplicação
 
-https://github.com/werbertviana/apibatuta/assets/84457740/dab922c6-e3bf-4285-bb86-4001f7a51517
-
+https://github.com/user-attachments/assets/aa1a286a-eaa3-4d26-98a6-ae738c7ffa3f
 
