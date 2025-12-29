@@ -7,12 +7,12 @@
 
 * O diferencial do BATUTA está na abordagem lúdica e inovadora da gamificação, que motiva e estimula o aprendizado, proporcionando uma experiência educacional envolvente.
 
-<img src="src/assets/BG2.jpg"> </image>
+<img src="src/assets/images/BG/BG1.jpg"> </image>
 
 # Batuta - Backend
 * O Back-End teve sua implementação realizada em Node JS juntamente com o uso das tecnologias do Typescript e PrismaORM. Para os testes de requisição da API foi utilizado o Insomnia.
 
-<img src="src/assets/insomnia.jpg"> </image>
+<img src="src/assets/images/BG/BG3.jpg"> </image>
 
   
 # Arquitetura da API
@@ -25,7 +25,7 @@
 4. Express
 5. Docker
    
-<img src="src/assets/Tec.jpg"> </image>
+<img src="src/assets/images/BG/BG4.jpg"> </image>
    
 # Vídeo demonstrativo da Aplicação
 
