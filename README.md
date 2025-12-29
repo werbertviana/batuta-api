@@ -27,7 +27,7 @@
    
 <img src="src/assets/images/BG/BG4.jpg"> </image>
    
-# Vídeo demonstrativo da Aplicação
+# 🎥 Vídeo demonstrativo do BATUTA
 
 https://github.com/user-attachments/assets/aa1a286a-eaa3-4d26-98a6-ae738c7ffa3f
 
