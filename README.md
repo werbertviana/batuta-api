@@ -1,49 +1,34 @@
-# Node + Express + Prisma + Postgres (Docker) — Template
+# Batuta
+> Status: Em desenvolvimento
 
-## Requisitos
-- Node 20+
-- Docker + Docker Compose
+* Para tornar o ensino de teoria musical mais acessível e envolvente, este projeto visa desenvolver um aplicativo móvel chamado BATUTA, baseado em gamificação. A gamificação envolve a incorporação de elementos de jogos para resolver problemas práticos e engajar o público.
 
-## 1) Subir banco + API via Docker
-```bash
-cp .env.example .env
-docker compose up --build
-```
+* Na aplicação BATUTA, os conteúdos serão abordados de maneira envolvente e interativa, utilizando o formato lúdico dos jogos "quiz" para testar e consolidar o conhecimento. 
 
-API: http://localhost:3000  
-Health: http://localhost:3000/health  
-Users: http://localhost:3000/api/users
+* O diferencial do BATUTA está na abordagem lúdica e inovadora da gamificação, que motiva e estimula o aprendizado, proporcionando uma experiência educacional envolvente.
 
-> Observação: o container da API usa `DATABASE_URL` apontando para o service `db`.
+<img src="src/assets/BG2.jpg"> </image>
 
-## 2) Rodar local (sem container da API)
-1. Suba só o banco:
-```bash
-docker compose up -d db
-```
+# Batuta - Backend
+* O Back-End teve sua implementação realizada em Node JS juntamente com o uso das tecnologias do Typescript e PrismaORM. Para os testes de requisição da API foi utilizado o Insomnia.
 
-2. Instale deps e gere Prisma:
-```bash
-npm i
-cp .env.example .env
-npm run prisma:generate
-```
+<img src="src/assets/insomnia.jpg"> </image>
 
-3. Rode as migrations:
-```bash
-npm run prisma:migrate
-```
+  
+# Arquitetura da API
+* O padrão de arquitetura de software escolhido foi o RESTful, juntamente com a estrutura de acesso ao banco de dados estabelecida pelo PrismaORM.
+  
+# Tecnologias utilizadas no projeto
+1. Node.Js
+2. Typescript
+3. PrismaORM
+4. Express
+5. Docker
+   
+<img src="src/assets/Tec.jpg"> </image>
+   
+# Vídeo demonstrativo da Aplicação
 
-4. Rode em dev:
-```bash
-npm run dev
-```
+https://github.com/werbertviana/apibatuta/assets/84457740/dab922c6-e3bf-4285-bb86-4001f7a51517
 
-## Estrutura de pastas
-- `src/app.ts` (middlewares + routes)
-- `src/routes/index.ts` (router principal /api)
-- `src/shared/*` (env, prisma client, errors)
-- `src/modules/<modulo>/{controller,service,repository,routes,types}.ts`
 
-## Próximo passo
-Me envie como vai ser o banco no futuro (tabelas/relacionamentos) que eu atualizo `prisma/schema.prisma` no mesmo padrão.
